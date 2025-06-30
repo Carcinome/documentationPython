@@ -1,5 +1,5 @@
 Introduction
 ============
 
-Vous trouverez dans cette documentation la toutes les commandes connues pour utiliser convenablement python. 
+Vous trouverez dans cette documentation les commandes les plus courantes pour utiliser convenablement python. 
 

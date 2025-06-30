@@ -6,7 +6,7 @@
 Documentation Python
 ====================
 
-Cette documentation contient l'ensemble des commandes et fonctions Python3 connues. 
+Cette documentation contient un condensé des commandes et fonctions Python3 connues. 
 
 .. toctree::
    :maxdepth: 3
