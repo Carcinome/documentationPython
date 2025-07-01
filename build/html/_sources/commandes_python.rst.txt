@@ -1,11 +1,11 @@
 **Commandes Python**
 ====================
 
-**1. Commandes de base**
-------------------------
+**1.1 Commandes de base**
+-------------------------
 
-**1.1 python3**
-^^^^^^^^^^^^^^^
+**1.1.1 python3**
+^^^^^^^^^^^^^^^^^
 
 **Syntaxe :**
 
@@ -32,8 +32,8 @@ Permet de lancer des scripts Python.
     
     -m pour spécifier qu'on souhaite utiliser un module de Python et non un fichier script.
 
-**1.2 # et """commentaire"""**
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+**1.1.2 # et """commentaire"""**
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 **Syntaxe :**
 
@@ -60,8 +60,8 @@ Permet de commenter le code. **Capital** pour maintenir un code à jour, propre 
 
     """ Permet de commenter sur plusieurs lignes, on peut s'en servir pour générer des tooltips dans le cadre de fonctions et classes par exemple. 
 
-**1.3 import / from**
-^^^^^^^^^^^^^^^^^^^^^
+**1.1.3 import / from**
+^^^^^^^^^^^^^^^^^^^^^^^
 
 **Syntaxe :**
 
@@ -101,8 +101,8 @@ Permet de commenter le code. **Capital** pour maintenir un code à jour, propre 
         
         import numpy as np
 
-**1.4 pip**
-^^^^^^^^^^^
+**1.1.4 pip**
+^^^^^^^^^^^^^
 
 **Syntaxe :**
 
@@ -139,8 +139,8 @@ Gestionnaire de paquets inclu dans Python pour gérer des packages.
     - `freeze` et `list` pour afficher la liste des packages installés. `freeze` est plus complet que `list` et permet d'incrémenter un fichier requirements.txt.
     - `show` permet de voir les informations des packages passés en argument. 
 
-**1.5 print**
-^^^^^^^^^^^^^
+**1.1.5 print**
+^^^^^^^^^^^^^^^
 
 **Syntaxe :**
 

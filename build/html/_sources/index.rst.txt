@@ -9,9 +9,9 @@ Documentation Python
 Cette documentation contient un condensé des commandes et fonctions Python3 connues. 
 
 .. toctree::
-   :maxdepth: 3
+   :maxdepth: 4
    :caption: Table des matières:
    
    introduction
    commandes_python
-   
+   recommandations
