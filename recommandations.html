@@ -1,0 +1,362 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="fr" data-content_root="./">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PEP 8 Python &mdash; Documentation Documentation Python alpha_v0.1</title>
+      <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=b86133f3" />
+      <link rel="stylesheet" type="text/css" href="_static/css/theme.css?v=e59714d7" />
+      <link rel="stylesheet" type="text/css" href="_static/copybutton.css?v=76b2166b" />
+
+  
+    <link rel="canonical" href="https://carcinome.github.io/documentationPython/recommandations.html" />
+      <script src="_static/jquery.js?v=5d32c60e"></script>
+      <script src="_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="_static/documentation_options.js?v=63139195"></script>
+      <script src="_static/doctools.js?v=9bcbadda"></script>
+      <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+      <script src="_static/clipboard.min.js?v=a7894cd8"></script>
+      <script src="_static/copybutton.js?v=f281be69"></script>
+      <script src="_static/translations.js?v=e6b791cb"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Recherche" href="search.html" />
+    <link rel="prev" title="Commandes Python" href="commandes_python.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="index.html" class="icon icon-home">
+            Documentation Python
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Rechercher docs" aria-label="Rechercher docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Table des matières:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="introduction.html">Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="commandes_python.html"><strong>Commandes Python</strong></a><ul>
+<li class="toctree-l2"><a class="reference internal" href="commandes_python.html#commandes-de-base"><strong>1.1 Commandes de base</strong></a><ul>
+<li class="toctree-l3"><a class="reference internal" href="commandes_python.html#python3"><strong>1.1.1 python3</strong></a></li>
+<li class="toctree-l3"><a class="reference internal" href="commandes_python.html#et-commentaire"><strong>1.1.2 # et « «  »commentaire » » »</strong></a></li>
+<li class="toctree-l3"><a class="reference internal" href="commandes_python.html#import-from"><strong>1.1.3 import / from</strong></a></li>
+<li class="toctree-l3"><a class="reference internal" href="commandes_python.html#pip"><strong>1.1.4 pip</strong></a></li>
+<li class="toctree-l3"><a class="reference internal" href="commandes_python.html#print"><strong>1.1.5 print</strong></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#"><strong>PEP 8 Python</strong></a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#convention-de-noms-des-variables"><strong>2.1 Convention de noms des variables</strong></a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#variables"><strong>2.1.1 Variables</strong></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#variables-constantes"><strong>2.1.2 Variables constantes</strong></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#convention-de-noms-des-classes"><strong>2.2 Convention de noms des classes</strong></a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#classes"><strong>2.2.1 Classes</strong></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#convention-de-noms-des-modules"><strong>2.3 Convention de noms des modules</strong></a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#modules"><strong>2.3.1 Modules</strong></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#formalisme-d-ecriture-des-commentaires"><strong>2.4 Formalisme d’écriture des commentaires</strong></a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#commentaires"><strong>2.4.1 Commentaires</strong></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#chaines-de-documentation"><strong>2.4.2 Chaînes de documentation</strong></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#convention-d-ecriture-de-code"><strong>2.5 Convention d’écriture de code</strong></a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#indentation"><strong>2.5.1 Indentation</strong></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#sauts-de-ligne"><strong>2.5.2 Sauts de ligne</strong></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#lignes-de-code"><strong>2.5.3 Lignes de code</strong></a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">Documentation Python</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active"><strong>PEP 8 Python</strong></li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/recommandations.rst.txt" rel="nofollow"> Afficher la source de la page</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="pep-8-python">
+<h1><strong>PEP 8 Python</strong><a class="headerlink" href="#pep-8-python" title="Lien vers cette rubrique"></a></h1>
+<section id="convention-de-noms-des-variables">
+<h2><strong>2.1 Convention de noms des variables</strong><a class="headerlink" href="#convention-de-noms-des-variables" title="Lien vers cette rubrique"></a></h2>
+<p>Les variables suivent une des conventions de noms suivantes selon si elles appartiennent aux variables dites « classiques » ou aux variables constantes.</p>
+<section id="variables">
+<h3><strong>2.1.1 Variables</strong><a class="headerlink" href="#variables" title="Lien vers cette rubrique"></a></h3>
+<p>Les variables « classiques » s’écrivent en minuscules avec des underscores (convention <em>snake_case</em>) :</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">name</span> <span class="o">=</span> <span class="s2">&quot;Lucas&quot;</span>
+<span class="n">fuel_level</span> <span class="o">=</span> <span class="mi">100</span>
+<span class="n">famous_singers</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;Céline Dion&quot;</span><span class="p">,</span> <span class="s2">&quot;Eminem&quot;</span><span class="p">,</span> <span class="s2">&quot;Charles Aznavour&quot;</span><span class="p">]</span>
+</pre></div>
+</div>
+</section>
+<section id="variables-constantes">
+<h3><strong>2.1.2 Variables constantes</strong><a class="headerlink" href="#variables-constantes" title="Lien vers cette rubrique"></a></h3>
+<p>Les variables constantes s’écrivent en majuscules avec des underscores :</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">DAYS_PER_WEEK</span> <span class="o">=</span> <span class="mi">7</span>
+<span class="n">PERSONNAL_EMAIL</span> <span class="o">=</span> <span class="s2">&quot;examplemail@email.gov&quot;</span>
+</pre></div>
+</div>
+</section>
+</section>
+<section id="convention-de-noms-des-classes">
+<h2><strong>2.2 Convention de noms des classes</strong><a class="headerlink" href="#convention-de-noms-des-classes" title="Lien vers cette rubrique"></a></h2>
+<section id="classes">
+<h3><strong>2.2.1 Classes</strong><a class="headerlink" href="#classes" title="Lien vers cette rubrique"></a></h3>
+<p>Les noms de classes sont écrits avec une majuscule au début de chaque mot, sans ponctuation (convention <em>CapitalCase</em>) :</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">class</span><span class="w"> </span><span class="nc">MangasStore</span><span class="p">:</span>
+    <span class="k">pass</span>
+
+<span class="k">class</span><span class="w"> </span><span class="nc">VideoGames</span><span class="p">:</span>
+    <span class="k">pass</span>
+</pre></div>
+</div>
+</section>
+</section>
+<section id="convention-de-noms-des-modules">
+<h2><strong>2.3 Convention de noms des modules</strong><a class="headerlink" href="#convention-de-noms-des-modules" title="Lien vers cette rubrique"></a></h2>
+<section id="modules">
+<h3><strong>2.3.1 Modules</strong><a class="headerlink" href="#modules" title="Lien vers cette rubrique"></a></h3>
+<p>Les noms des modules sont à écrire en minuscules en évitant au maximum les underscores :</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">os</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">sys</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">pandas</span>
+</pre></div>
+</div>
+</section>
+</section>
+<section id="formalisme-d-ecriture-des-commentaires">
+<h2><strong>2.4 Formalisme d’écriture des commentaires</strong><a class="headerlink" href="#formalisme-d-ecriture-des-commentaires" title="Lien vers cette rubrique"></a></h2>
+<section id="commentaires">
+<h3><strong>2.4.1 Commentaires</strong><a class="headerlink" href="#commentaires" title="Lien vers cette rubrique"></a></h3>
+<ul class="simple">
+<li><p>Les commentaires sont à écrire sous forme de phrase complète, en anglais si possible sauf si l’équipe de développement préfère une autre langue.</p></li>
+<li><p>Il est fortement recommandé de ne pas contredire le code en utilisant les commentaires.</p></li>
+<li><p>Les commentaires doivent impérativement être mis à jour lorsque le code change.</p></li>
+<li><p>Il est recommandé de ne pas mettre le commentaire sur la même ligne que le code.</p></li>
+<li><p>Un seul espace entre le <cite>#</cite> et le code est requis.</p></li>
+<li><p>Il faut utiliser le même niveau d’indentation que la ligne de code qui suit.</p></li>
+</ul>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># Commentaire correctement formulé</span>
+<span class="k">def</span><span class="w"> </span><span class="nf">foo</span><span class="p">(</span><span class="n">arg</span><span class="p">):</span>
+    <span class="c1"># Commentaire correctement formulé</span>
+    <span class="k">pass</span>
+
+    <span class="c1"># Commentaire mal formulé</span>
+<span class="k">def</span><span class="w"> </span><span class="nf">foo</span><span class="p">(</span><span class="n">arg</span><span class="p">):</span>
+<span class="c1"># Commentaire mal formulé</span>
+    <span class="k">pass</span>
+</pre></div>
+</div>
+</section>
+<section id="chaines-de-documentation">
+<h3><strong>2.4.2 Chaînes de documentation</strong><a class="headerlink" href="#chaines-de-documentation" title="Lien vers cette rubrique"></a></h3>
+<p>Plus communément appellées <em>docstrings</em>, les chaînes de documentation sont des commentaires spéciaux à rédiger au début d’une fonction, d’une classe ou d’un module.
+On les utilise pour la documentation. Elles permettent aussi aux outils automatisés d’accéder au texte.
+Tout comme les commentaires cités plus haut, les doctrings sont à rédiger de préférence en anglais.
+Il est recommandé contrairement aux commentaires d’en utiliser à profusion, même pour une courte description.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">def</span><span class="w"> </span><span class="nf">multiply</span><span class="p">(</span><span class="n">first</span><span class="p">,</span> <span class="n">second</span><span class="o">=</span><span class="mi">1</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;Multiplie deux nombres.</span>
+
+<span class="sd">    Arguments:</span>
+<span class="sd">        first -- le multiplicande</span>
+<span class="sd">        second -- le multiplicateur (par défaut, 1)</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="k">return</span> <span class="n">first</span> <span class="o">*</span> <span class="n">second</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="n">multiply</span><span class="p">(</span><span class="mi">13</span><span class="p">,</span> <span class="mi">77</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">multiply</span><span class="o">.</span><span class="vm">__doc__</span><span class="p">)</span>
+</pre></div>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Les docstrings en début de fonction ou de classe sont spéciales, on peut y accéder en utilisant l’attribut <cite>__doc__</cite>.</p>
+</div>
+</section>
+</section>
+<section id="convention-d-ecriture-de-code">
+<h2><strong>2.5 Convention d’écriture de code</strong><a class="headerlink" href="#convention-d-ecriture-de-code" title="Lien vers cette rubrique"></a></h2>
+<section id="indentation">
+<h3><strong>2.5.1 Indentation</strong><a class="headerlink" href="#indentation" title="Lien vers cette rubrique"></a></h3>
+<p>Il est recommandé d’utiliser <strong>4 espaces</strong> ou une <strong>tabulation</strong> pour éviter les erreurs d’indentation.</p>
+<ul class="simple">
+<li><p>Un seul espace autour des opérateurs d’affectation et des opérateurs logiques. La seule exception intervient lorsqu’on fixe des valeurs par défaut en paramètres de fonctions et methodes (<cite>second=1</cite>, vu plus haut).</p></li>
+</ul>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># Opérateur d&#39;affectation</span>
+<span class="n">is_little</span> <span class="o">=</span> <span class="s2">&quot;little&quot;</span> <span class="ow">in</span> <span class="n">sanctuary</span>
+
+<span class="c1"># Opérateur logique</span>
+<span class="n">max_places</span> <span class="o">&lt;</span> <span class="mi">5</span>
+</pre></div>
+</div>
+<ul class="simple">
+<li><p>Ne jamais mettre d’espaces tout de suite à l’intérieur de parenthèses ou de crochets.</p></li>
+</ul>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># Correct</span>
+<span class="p">(</span><span class="n">expression</span><span class="p">)</span>
+<span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+
+<span class="c1"># Incorrect</span>
+<span class="p">(</span> <span class="n">expression</span> <span class="p">)</span>
+<span class="p">[</span> <span class="mi">0</span> <span class="p">]</span>
+</pre></div>
+</div>
+<ul class="simple">
+<li><p>Ne pas laisser d’espace entre une fonction et ses arguments.</p></li>
+</ul>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Nous avons protégés ces animaux : </span><span class="si">{</span><span class="n">protected</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+<ul class="simple">
+<li><p>Laisser un espace entre <cite>if</cite> et toute parenthèse. La même règle s’applique pour <cite>for</cite>. Cela maintient la cohérence avec les cas de figure dans lesquels il n’y a pas de parenthèses.</p></li>
+</ul>
+</section>
+<section id="sauts-de-ligne">
+<h3><strong>2.5.2 Sauts de ligne</strong><a class="headerlink" href="#sauts-de-ligne" title="Lien vers cette rubrique"></a></h3>
+<p>Les sauts de ligne sont à utiliser pour regrouper les lignes de code qui vont ensemble (à la manière de paragraphes). En dehors de cela, il est recommandé de ne pas sauter de ligne.</p>
+<ul class="simple">
+<li><p>Avant une définition de classe ou une définition de fonction, il faut sauter deux lignes.</p></li>
+<li><p>Avant la définition d’une méthode au sein d’une classe, un seul saut de ligne est à prévoir.</p></li>
+</ul>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">name</span> <span class="o">=</span> <span class="s2">&quot;Clément&quot;</span>
+
+
+<span class="k">def</span><span class="w"> </span><span class="nf">multiply</span><span class="p">(</span><span class="n">first</span><span class="p">,</span> <span class="n">second</span><span class="o">=</span><span class="mi">1</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;Multiplie deux nombres.</span>
+
+<span class="sd">    Arguments:</span>
+<span class="sd">        first -- le multiplicande</span>
+<span class="sd">        second -- le multiplicateur (par défaut, 1)</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="k">return</span> <span class="n">first</span> <span class="o">*</span> <span class="n">second</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="n">multiply</span><span class="p">(</span><span class="mi">13</span><span class="p">,</span> <span class="mi">77</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">multiply</span><span class="o">.</span><span class="vm">__doc__</span><span class="p">)</span>
+
+
+<span class="k">class</span><span class="w"> </span><span class="nc">ToolBox</span><span class="p">:</span>
+
+<span class="sd">&quot;&quot;&quot;Boite à outils.&quot;&quot;&quot;</span>
+
+<span class="k">def</span><span class="w"> </span><span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;Initialise les outils.&quot;&quot;&quot;</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">tools</span> <span class="o">=</span> <span class="p">[]</span>
+
+<span class="k">def</span><span class="w"> </span><span class="nf">add_tool</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">tool</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;Ajoute un outil.&quot;&quot;&quot;</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">tools</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">tool</span><span class="p">)</span>
+
+<span class="k">def</span><span class="w"> </span><span class="nf">remove_tool</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">tool</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;Enleve un outil.&quot;&quot;&quot;</span>
+    <span class="n">index</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">tools</span><span class="o">.</span><span class="n">index</span><span class="p">(</span><span class="n">tool</span><span class="p">)</span>
+    <span class="k">del</span> <span class="bp">self</span><span class="o">.</span><span class="n">tools</span><span class="p">[</span><span class="n">index</span><span class="p">]</span>
+</pre></div>
+</div>
+</section>
+<section id="lignes-de-code">
+<h3><strong>2.5.3 Lignes de code</strong><a class="headerlink" href="#lignes-de-code" title="Lien vers cette rubrique"></a></h3>
+<ul class="simple">
+<li><p>Concernant la longueur maximum d’une ligne de code, la PEP 8 suggère de limiter le nombre de caractères à <strong>79</strong>.</p></li>
+<li><p>Pour écrire des expressions sans dépasser cette limite suggérée, on doit les écrire sur plusieurs lignes.</p></li>
+</ul>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># Exemple d&#39;écriture d&#39;expressions incorrect</span>
+<span class="k">def</span><span class="w"> </span><span class="nf">function_with_a_rather_long_name</span><span class="p">(</span><span class="n">parameter_number_1</span><span class="p">,</span> <span class="n">parameter_number_2</span><span class="p">,</span>
+    <span class="n">parameter_number_3</span><span class="p">):</span>
+    <span class="n">my_function</span><span class="p">(</span><span class="n">parameter_number_1</span><span class="p">)</span>
+    <span class="k">return</span> <span class="n">parameter_number_2</span>
+
+<span class="c1"># On peut aligner les paramètres sur la verticale</span>
+<span class="k">def</span><span class="w"> </span><span class="nf">function_with_a_rather_long_name</span><span class="p">(</span><span class="n">parameter_number_1</span><span class="p">,</span> <span class="n">parameter_number_2</span><span class="p">,</span>
+                                     <span class="n">parameter_number_3</span><span class="p">):</span>
+    <span class="n">my_function</span><span class="p">(</span><span class="n">parameter_number_1</span><span class="p">)</span>
+    <span class="k">return</span> <span class="n">parameter_number_2</span>
+
+<span class="c1"># On peut procéder avec un paramètre par ligne</span>
+<span class="k">def</span><span class="w"> </span><span class="nf">function_with_a_rather_long_name</span><span class="p">(</span><span class="n">parameter_number_1</span><span class="p">,</span>
+                                     <span class="n">parameter_number_2</span><span class="p">,</span>
+                                     <span class="n">parameter_number_3</span><span class="p">):</span>
+    <span class="n">my_function</span><span class="p">(</span><span class="n">parameter_number_1</span><span class="p">)</span>
+    <span class="k">return</span> <span class="n">parameter_number_2</span>
+
+<span class="c1"># Ou encore, avec un paramètre par ligne et la parenthèse au niveau de l&#39;indentation de la fonction</span>
+<span class="k">def</span><span class="w"> </span><span class="nf">function_with_a_rather_long_name</span><span class="p">(</span>
+    <span class="n">parameter_number_1</span><span class="p">,</span>
+    <span class="n">parameter_number_2</span><span class="p">,</span>
+    <span class="n">parameter_number_3</span>
+<span class="p">):</span>
+    <span class="n">my_function</span><span class="p">(</span><span class="n">parameter_number_1</span><span class="p">)</span>
+    <span class="k">return</span> <span class="n">parameter_number_2</span>
+</pre></div>
+</div>
+</section>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Pied de page">
+        <a href="commandes_python.html" class="btn btn-neutral float-left" title="Commandes Python" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Précédent</a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Droits d'auteur 2025, Clément &#34;Carcinome&#34; Aicardi.</p>
+  </div>
+
+  Compilé avec <a href="https://www.sphinx-doc.org/">Sphinx</a> en utilisant un
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">thème</a>
+    fourni par <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
