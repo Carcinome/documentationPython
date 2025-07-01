@@ -232,3 +232,16 @@ Les sauts de ligne sont à utiliser pour regrouper les lignes de code qui vont e
     ):
         my_function(parameter_number_1)
         return parameter_number_2
+
+- Il est possible de découper de longues chaînes de caractères avec la manière ci-dessous, Python les interprétera comme une seule chaîne de caractères lors de l'exécution du code. 
+
+.. code-block:: python
+
+    ultra_long_password = ( 
+        "dfsghfghgfh(bvxdsfsglgjhsdghgt_y(çp_ghstrisdhgdhg"
+        "lfgàjçdjfgdkgbslgfgbixfugfgblfdgkvbxcvxvqufsdvfsd"
+        "dfghffidkgljfg-_è-çàghjdgdlbfhgdflhgkdnmbszuzhgpc"
+        "dkdky-çèàytjhfmghompfddfgjfo-çjjhjsbéj&lksldnflde"
+    )
+
+    
