@@ -196,8 +196,10 @@ Les sauts de ligne sont à utiliser pour regrouper les lignes de code qui vont e
         index = self.tools.index(tool)
         del self.tools[index]
 
-
-**2.5.3 Lignes de code**
+def function_with_a_rather_long_name(parameter_number_1, parameter_number_2,
+        parameter_number_3):
+        my_function(parameter_number_1)
+        return parameter_number_2
 ^^^^^^^^^^^^^^^^^^^^^^^^
 
 - Concernant la longueur maximum d'une ligne de code, la PEP 8 suggère de limiter le nombre de caractères à **79**.

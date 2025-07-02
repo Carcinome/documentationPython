@@ -1,8 +1,9 @@
 **Commandes Python**
 ====================
 
-**1.1 Commandes de base**
--------------------------
+
+**1.1 Exécution et environnement**
+----------------------------------
 
 **1.1.1 python3**
 ^^^^^^^^^^^^^^^^^
@@ -32,8 +33,12 @@ Permet de lancer des scripts Python.
     
     -m pour spécifier qu'on souhaite utiliser un module de Python et non un fichier script.
 
-**1.1.2 # et """commentaire"""**
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+**1.2 Commentaire & documentation**
+----------------------------------
+
+**1.2.1 # et doctrings**
+^^^^^^^^^^^^^^^^^^^^^^^^
 
 **Syntaxe :**
 
@@ -58,9 +63,13 @@ Permet de commenter le code. **Capital** pour maintenir un code à jour, propre 
 
     # Utilisé pour commenter sur une ligne.
 
-    """ Permet de commenter sur plusieurs lignes, on peut s'en servir pour générer des tooltips dans le cadre de fonctions et classes par exemple. 
+    Les doctrings permettent de commenter sur plusieurs lignes, on peut s'en servir pour générer de la documentation de manière générale et des tooltips dans le cadre de fonctions et classes par exemple. 
 
-**1.1.3 import / from**
+
+**1.3 Imports et modules**
+--------------------------
+
+**1.3.1 import / from**
 ^^^^^^^^^^^^^^^^^^^^^^^
 
 **Syntaxe :**
@@ -101,7 +110,11 @@ Permet de commenter le code. **Capital** pour maintenir un code à jour, propre 
         
         import numpy as np
 
-**1.1.4 pip**
+
+**1.4 Gestion de packages**
+---------------------------
+
+**1.4.1 pip**
 ^^^^^^^^^^^^^
 
 **Syntaxe :**
@@ -138,6 +151,10 @@ Gestionnaire de paquets inclu dans Python pour gérer des packages.
     - `uninstall` pour désinstaller un package.
     - `freeze` et `list` pour afficher la liste des packages installés. `freeze` est plus complet que `list` et permet d'incrémenter un fichier requirements.txt.
     - `show` permet de voir les informations des packages passés en argument. 
+
+
+**1.5 affichage et chaînes**
+----------------------------
 
 **1.1.5 print**
 ^^^^^^^^^^^^^^^

@@ -6,7 +6,7 @@
 Documentation Python
 ====================
 
-Cette documentation contient un condensé des commandes et fonctions Python3 connues. 
+Cette documentation contient un condensé des commandes et fonctions Python3 connues ainsi que la convention PEP 8 pour une bonne syntaxe de code.
 
 .. toctree::
    :maxdepth: 4
