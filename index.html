@@ -50,11 +50,23 @@
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="introduction.html">Introduction</a></li>
 <li class="toctree-l1"><a class="reference internal" href="commandes_python.html"><strong>Commandes Python</strong></a><ul>
-<li class="toctree-l2"><a class="reference internal" href="commandes_python.html#commandes-de-base"><strong>1.1 Commandes de base</strong></a><ul>
+<li class="toctree-l2"><a class="reference internal" href="commandes_python.html#execution-et-environnement"><strong>1.1 Exécution et environnement</strong></a><ul>
 <li class="toctree-l3"><a class="reference internal" href="commandes_python.html#python3"><strong>1.1.1 python3</strong></a></li>
-<li class="toctree-l3"><a class="reference internal" href="commandes_python.html#et-commentaire"><strong>1.1.2 # et « «  »commentaire » » »</strong></a></li>
-<li class="toctree-l3"><a class="reference internal" href="commandes_python.html#import-from"><strong>1.1.3 import / from</strong></a></li>
-<li class="toctree-l3"><a class="reference internal" href="commandes_python.html#pip"><strong>1.1.4 pip</strong></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="commandes_python.html#commentaire-documentation"><strong>1.2 Commentaire &amp; documentation</strong></a><ul>
+<li class="toctree-l3"><a class="reference internal" href="commandes_python.html#et-doctrings"><strong>1.2.1 # et doctrings</strong></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="commandes_python.html#imports-et-modules"><strong>1.3 Imports et modules</strong></a><ul>
+<li class="toctree-l3"><a class="reference internal" href="commandes_python.html#import-from"><strong>1.3.1 import / from</strong></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="commandes_python.html#gestion-de-packages"><strong>1.4 Gestion de packages</strong></a><ul>
+<li class="toctree-l3"><a class="reference internal" href="commandes_python.html#pip"><strong>1.4.1 pip</strong></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="commandes_python.html#affichage-et-chaines"><strong>1.5 affichage et chaînes</strong></a><ul>
 <li class="toctree-l3"><a class="reference internal" href="commandes_python.html#print"><strong>1.1.5 print</strong></a></li>
 </ul>
 </li>
@@ -82,7 +94,6 @@
 <li class="toctree-l2"><a class="reference internal" href="recommandations.html#convention-d-ecriture-de-code"><strong>2.5 Convention d’écriture de code</strong></a><ul>
 <li class="toctree-l3"><a class="reference internal" href="recommandations.html#indentation"><strong>2.5.1 Indentation</strong></a></li>
 <li class="toctree-l3"><a class="reference internal" href="recommandations.html#sauts-de-ligne"><strong>2.5.2 Sauts de ligne</strong></a></li>
-<li class="toctree-l3"><a class="reference internal" href="recommandations.html#lignes-de-code"><strong>2.5.3 Lignes de code</strong></a></li>
 </ul>
 </li>
 </ul>
@@ -115,17 +126,29 @@
              
   <section id="documentation-python">
 <h1>Documentation Python<a class="headerlink" href="#documentation-python" title="Lien vers cette rubrique"></a></h1>
-<p>Cette documentation contient un condensé des commandes et fonctions Python3 connues.</p>
+<p>Cette documentation contient un condensé des commandes et fonctions Python3 connues ainsi que la convention PEP 8 pour une bonne syntaxe de code.</p>
 <div class="toctree-wrapper compound">
 <p class="caption" role="heading"><span class="caption-text">Table des matières:</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="introduction.html">Introduction</a></li>
 <li class="toctree-l1"><a class="reference internal" href="commandes_python.html"><strong>Commandes Python</strong></a><ul>
-<li class="toctree-l2"><a class="reference internal" href="commandes_python.html#commandes-de-base"><strong>1.1 Commandes de base</strong></a><ul>
+<li class="toctree-l2"><a class="reference internal" href="commandes_python.html#execution-et-environnement"><strong>1.1 Exécution et environnement</strong></a><ul>
 <li class="toctree-l3"><a class="reference internal" href="commandes_python.html#python3"><strong>1.1.1 python3</strong></a></li>
-<li class="toctree-l3"><a class="reference internal" href="commandes_python.html#et-commentaire"><strong>1.1.2 # et « «  »commentaire » » »</strong></a></li>
-<li class="toctree-l3"><a class="reference internal" href="commandes_python.html#import-from"><strong>1.1.3 import / from</strong></a></li>
-<li class="toctree-l3"><a class="reference internal" href="commandes_python.html#pip"><strong>1.1.4 pip</strong></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="commandes_python.html#commentaire-documentation"><strong>1.2 Commentaire &amp; documentation</strong></a><ul>
+<li class="toctree-l3"><a class="reference internal" href="commandes_python.html#et-doctrings"><strong>1.2.1 # et doctrings</strong></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="commandes_python.html#imports-et-modules"><strong>1.3 Imports et modules</strong></a><ul>
+<li class="toctree-l3"><a class="reference internal" href="commandes_python.html#import-from"><strong>1.3.1 import / from</strong></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="commandes_python.html#gestion-de-packages"><strong>1.4 Gestion de packages</strong></a><ul>
+<li class="toctree-l3"><a class="reference internal" href="commandes_python.html#pip"><strong>1.4.1 pip</strong></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="commandes_python.html#affichage-et-chaines"><strong>1.5 affichage et chaînes</strong></a><ul>
 <li class="toctree-l3"><a class="reference internal" href="commandes_python.html#print"><strong>1.1.5 print</strong></a></li>
 </ul>
 </li>
@@ -153,7 +176,6 @@
 <li class="toctree-l2"><a class="reference internal" href="recommandations.html#convention-d-ecriture-de-code"><strong>2.5 Convention d’écriture de code</strong></a><ul>
 <li class="toctree-l3"><a class="reference internal" href="recommandations.html#indentation"><strong>2.5.1 Indentation</strong></a></li>
 <li class="toctree-l3"><a class="reference internal" href="recommandations.html#sauts-de-ligne"><strong>2.5.2 Sauts de ligne</strong></a></li>
-<li class="toctree-l3"><a class="reference internal" href="recommandations.html#lignes-de-code"><strong>2.5.3 Lignes de code</strong></a></li>
 </ul>
 </li>
 </ul>
