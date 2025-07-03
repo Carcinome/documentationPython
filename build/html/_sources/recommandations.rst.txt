@@ -246,4 +246,109 @@ def function_with_a_rather_long_name(parameter_number_1, parameter_number_2,
         "dkdky-çèàytjhfmghompfddfgjfo-çjjhjsbéj&lksldnflde"
     )
 
+
+**2.6 formatage du code**
+-------------------------
+
+**2.6.1 linters**
+^^^^^^^^^^^^^^^^^
+
+Les linters permettent d'éviter de rencontrer les problèmes liés au non-respect de la convention PEP 8.
+
+Certains linters sont disponibles en ligne et d'autres sont directement intégrés au IDE, mais il reste préférable d'installer les packages `Flake8` et `Black` directement dans votre environnement Python.
+
+.. code-block:: python
+
+    pip install flake8
+    pip install black
+
+Une fois les packages installés, `flake8` et `black` peuvent être lancés dans la console Python en précisant le chemin d'accès du fichier concerné pour procéder 
+à la vérification du respect des normes PEP 8 (flake8) et à la bonne mise en forme du code (black). 
+
+.. code-block:: python
+
+    flake8 /code_python/codeAcorriger.py
+    black /code_python/codeAcorriger.py
+
+
+**2.7 Patterns**
+----------------
+
+**2.7.1 Design pattern Constant**
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Le design pattern Constant est un modèle de simple qui n'affecte qu'une seule valeur dans le code. 
+Il préconise de mettre des mots sur des valeurs brutes afin d'éviter le problème de *nombres magiques*, constantes numériques non-nommées et très compliquées à maintenir. 
+Par exemple : 
+
+.. code-block:: python
+
+    # Mauvaise syntaxe
+    SEIZE = 16
+
+    # Bonne syntaxe
+    NOMBRE_DE_BITS = 16
+
+Cette syntaxe permet d'éviter les bugs de correction et modification, de faciliter la maintenance collaborative du code et de réduire au maximum le code superflu et les répétitions. 
+
+
+**2.7.2 Design pattern Decorateur**
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Ce design à pour but d'ajouter dynamiquement des fonctionnalités à un objet, sans modification de sa structure. Il est comparable à une fonction prennant en argument des fonctions et ce en ajoutant des fonctionnalités avant et après son exécution. 
+Cela permet d'ajouter des fonctionnalités à un objet sans modifier son code de manière directe.
+
+Voici ci-dessous poyur un exemple concret : 
+
+.. code-block:: python
+
+     from abc import ABC, abstractmethod
+
+     class Cocktail(ABC):
+        @abstractmethod
+        def get_description(self) -> str:
+            pass
+
+        @abstractmethod
+        def get_cout(self) -> float:
+            pass
     
+    class Mojito(Cocktail):
+        def get_description(self) -> str:
+            return "Mojito"
+
+        def get_cout(self) -> float:
+            return 10.0
+    
+    class DecorateurCocktail(Cocktail):
+        def __init__(self, cocktail: Cocktail):
+            self._Cocktail = Cocktail
+    
+    class Fraise(DecorateurCocktail):
+        def get_description(self) -> str:
+            return self._Cocktail.get_description + ", fraise"
+        
+        def get_cout(self) -> float:
+            return self._Cocktail.get_cout + 0.7
+    
+    class Sucre(DecorateurCocktail):
+        def get_description(self) -> str:
+            return self._Cocktail.get_description + ", sucre"
+
+        def get_cout(self) -> float:
+            return self._Cocktail.get_cout + 1.5
+
+    Cocktail = Mojito()
+
+    Cocktail = fraise(Cocktail)
+
+    Cocktail = sucre(Cocktail)
+
+    print(Cocktail.get_description()) # Mojito, fraise, sucre
+    print(Cocktail.get_cout()) # 10.0 + 0.7 + 1.5 = 12.2
+
+
+**2.7.3 Pattern d'architecture MVC**
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
