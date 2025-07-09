@@ -56,7 +56,7 @@
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="#commentaire-documentation"><strong>1.2 Commentaire &amp; documentation</strong></a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#et-doctrings"><strong>1.2.1 # et doctrings</strong></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#et-docstrings"><strong>1.2.1 # et docstrings</strong></a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="#imports-et-modules"><strong>1.3 Imports et modules</strong></a><ul>
@@ -95,6 +95,16 @@
 <li class="toctree-l2"><a class="reference internal" href="recommandations.html#convention-d-ecriture-de-code"><strong>2.5 Convention d’écriture de code</strong></a><ul>
 <li class="toctree-l3"><a class="reference internal" href="recommandations.html#indentation"><strong>2.5.1 Indentation</strong></a></li>
 <li class="toctree-l3"><a class="reference internal" href="recommandations.html#sauts-de-ligne"><strong>2.5.2 Sauts de ligne</strong></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="recommandations.html#formatage-du-code"><strong>2.6 formatage du code</strong></a><ul>
+<li class="toctree-l3"><a class="reference internal" href="recommandations.html#linters"><strong>2.6.1 linters</strong></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="recommandations.html#patterns"><strong>2.7 Patterns</strong></a><ul>
+<li class="toctree-l3"><a class="reference internal" href="recommandations.html#design-pattern-constant"><strong>2.7.1 Design pattern Constant</strong></a></li>
+<li class="toctree-l3"><a class="reference internal" href="recommandations.html#design-pattern-decorateur"><strong>2.7.2 Design pattern Decorateur</strong></a></li>
+<li class="toctree-l3"><a class="reference internal" href="recommandations.html#pattern-d-architecture-mvc"><strong>2.7.3 Pattern d’architecture MVC</strong></a></li>
 </ul>
 </li>
 </ul>
@@ -153,8 +163,8 @@
 </section>
 <section id="commentaire-documentation">
 <h2><strong>1.2 Commentaire &amp; documentation</strong><a class="headerlink" href="#commentaire-documentation" title="Lien vers cette rubrique"></a></h2>
-<section id="et-doctrings">
-<h3><strong>1.2.1 # et doctrings</strong><a class="headerlink" href="#et-doctrings" title="Lien vers cette rubrique"></a></h3>
+<section id="et-docstrings">
+<h3><strong>1.2.1 # et docstrings</strong><a class="headerlink" href="#et-docstrings" title="Lien vers cette rubrique"></a></h3>
 <p><strong>Syntaxe :</strong></p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># en début de ligne</span>
 <span class="sd">&quot;&quot;&quot;mettre ici le texte qui peut tenir</span>
@@ -172,7 +182,7 @@
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p># Utilisé pour commenter sur une ligne.</p>
-<p>Les doctrings permettent de commenter sur plusieurs lignes, on peut s’en servir pour générer de la documentation de manière générale et des tooltips dans le cadre de fonctions et classes par exemple.</p>
+<p>Les docstrings permettent de commenter sur plusieurs lignes, on peut s’en servir pour générer de la documentation de manière générale et des tooltips dans le cadre de fonctions et classes par exemple.</p>
 </div>
 </section>
 </section>

@@ -35,10 +35,10 @@ Permet de lancer des scripts Python.
 
 
 **1.2 Commentaire & documentation**
-----------------------------------
+-----------------------------------
 
-**1.2.1 # et doctrings**
-^^^^^^^^^^^^^^^^^^^^^^^^
+**1.2.1 # et docstrings**
+^^^^^^^^^^^^^^^^^^^^^^^^^
 
 **Syntaxe :**
 
@@ -63,7 +63,7 @@ Permet de commenter le code. **Capital** pour maintenir un code à jour, propre 
 
     # Utilisé pour commenter sur une ligne.
 
-    Les doctrings permettent de commenter sur plusieurs lignes, on peut s'en servir pour générer de la documentation de manière générale et des tooltips dans le cadre de fonctions et classes par exemple. 
+    Les docstrings permettent de commenter sur plusieurs lignes, on peut s'en servir pour générer de la documentation de manière générale et des tooltips dans le cadre de fonctions et classes par exemple. 
 
 
 **1.3 Imports et modules**
