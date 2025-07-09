@@ -35,7 +35,7 @@ Permet de lancer des scripts Python.
 
 
 **1.2 Commentaire & documentation**
-----------------------------------
+-----------------------------------
 
 **1.2.1 # et docstrings**
 ^^^^^^^^^^^^^^^^^^^^^^^^^
