@@ -15,3 +15,4 @@ Cette documentation contient un condensé des commandes et fonctions Python3 con
    introduction
    commandes_python
    recommandations
+   fonctions_python
